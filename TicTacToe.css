@@ -75,9 +75,6 @@ background-color: #000;
     margin-left: 100px;
     justify-content: space-between;
     display: flex;
-    
-
-    
 }
 .clrScore
 {
@@ -227,14 +224,9 @@ background-color: #000;
 
 
 
-/* Media query for screens up to Samsung A31's width */
-@media (max-width: 1080px) {
-    /* Add a CSS reset to remove default margins and padding */
-/* body, div, p, h1, h2, h3, ul, li, button, input {
-    margin: 0;
-    padding: 0;
-  } */
-  
+/* @media (max-width: 1080px) { */
+    
+    @media (width:412px) and (height:914px) {
     .header{
         font-size: 2rem;
     }
@@ -254,9 +246,7 @@ background-color: #000;
        }
 
     
-    .scorediv{
-        border: 1px solid white;
-    }
+    
     #lX{
         font-size: 30px;
     }
@@ -268,7 +258,7 @@ background-color: #000;
         height: auto;
     }
     .pwin{
-        border: 1px solid white;
+        
         font-size: 30px;
         height: 60px;
         width: auto;
@@ -279,7 +269,7 @@ background-color: #000;
     }
 
     .cngbtns{
-        border: 1px solid white;
+        
         margin: 0px;
         justify-content: space-between;
         width: auto;
@@ -295,6 +285,5 @@ background-color: #000;
     }
   
 }
-
 
 
