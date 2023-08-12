@@ -229,47 +229,62 @@ background-color: #000;
 
 /* Media query for screens up to Samsung A31's width */
 @media (max-width: 1080px) {
-  .header {
-    font-size: 2.5rem; /* Adjust font size for smaller screens */
-  }
+    .header{
+        font-size: 2rem;
+    }
+    .container{
+        width: 412px;
+        display: flex;
+    }
+    .buttons{
   
-  .buttons {
-    grid-template-columns: repeat(3, 100px); /* Adjust button size for smaller screens */
-    grid-template-rows: 100px 100px 100px;
+        width: 206px;
+        grid-template-columns: repeat(3, 50px);
+        grid-template-rows: 50px 50px 50px;
+        
+       }
+       .reset{
+        width: 206px;
+       }
+       #lX{
+        font-size: 22px;
+       }
+       #lO{
+        font-size: 22px;
+       }
+       .score-input{
+        width: 30px;
+        height: 30px;
+       }
+       .pwin{
+        font-size: 2rem;
+       }
+      
+       .cngbtns{
+        width: 206px;
+        border: 1px solid white;
+        margin-left: 0px;
+        justify-content: space-between;
+        
+       }
+       .replay{
+        margin: 0px;
+        display: flex;
+       }
+       .clrScore{
+        display: flex;
+        margin: 0px;
+        
+       }
+       #replay{
+        width: 76px;
+        font: 19px;
+       }
+       #clrScore{
+        width: 120px;
+        font: 20px;
+       }
   }
-  
-  .cngbtns {
-    height: 70px;
-    width: 210px;
-    margin-left: 70px;
-  }
-  
-  .clrScore {
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-  
-  .replay {
-    margin-top: 30px;
-    margin-left: 25px;
-  }
-  
-  #replay, #clrScore {
-    width: 70px;
-    height: 35px;
-    font-size: 16px;
-  }
-  
-  .score-input {
-    font-size: 16px;
-    width: 30px;
-    height: 25px;
-  }
-  
-  .pwin {
-    width: 350px;
-    height: 70px;
-    font-size: 40px;
-  }
-}
+
+
 
