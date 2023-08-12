@@ -227,131 +227,49 @@ background-color: #000;
 
 
 
-
-@media (max-width: 768px) {
-    /* CSS rules for screens up to 768px wide (typically mobile) */
-    body {
-        font-size: 14px; /* Adjust font size for mobile */
-    }
-    
-    .header {
-        padding: 10px; /* Adjust spacing for mobile header */
-    }
-    
-    .menu {
-        display: none; /* Hide menu on mobile */
-    }
-    
-    .content {
-        margin: 0; /* Adjust content margins for mobile */
-    }
+/* Media query for screens up to Samsung A31's width */
+@media (max-width: 1080px) {
+  .header {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+  
+  .buttons {
+    grid-template-columns: repeat(3, 100px); /* Adjust button size for smaller screens */
+    grid-template-rows: 100px 100px 100px;
+  }
+  
+  .cngbtns {
+    height: 70px;
+    width: 210px;
+    margin-left: 70px;
+  }
+  
+  .clrScore {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .replay {
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+  
+  #replay, #clrScore {
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+  }
+  
+  .score-input {
+    font-size: 16px;
+    width: 30px;
+    height: 25px;
+  }
+  
+  .pwin {
+    width: 350px;
+    height: 70px;
+    font-size: 40px;
+  }
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* CSS rules for screens between 769px and 1024px wide (tablets) */
-    body {
-        font-size: 16px; /* Increase font size for tablets */
-    }
-    
-    .header {
-        padding: 20px; /* Increase spacing for tablet header */
-    }
-    
-    .menu {
-        display: block; /* Display menu on tablets */
-    }
-    
-    .content {
-        margin: 20px; /* Adjust content margins for tablets */
-    }
-}
-
-
-
-
-
-/* Adjust layout for phones (up to 600px) */
-@media (max-width: 600px) {
-    .header {
-        font-size: 1.2rem;
-    }
-
-    .buttons {
-        grid-template-columns: repeat(3, 30vw);
-        grid-template-rows: repeat(3, 30vw);
-        gap: 5px;
-    }
-
-    .button {
-        font-size: 1rem;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* Other styles for phones */
-    /* ... */
-}
-
-/* Adjust layout for tablets (601px to 768px) */
-@media (min-width: 601px) and (max-width: 768px) {
-    .header {
-        font-size: 1.5rem;
-    }
-
-    .buttons {
-        grid-template-columns: repeat(3, 25vw);
-        grid-template-rows: repeat(3, 25vw);
-        gap: 10px;
-    }
-
-    .button {
-        font-size: 1.1rem;
-        /* Adjust other button styles */
-    }
-
-    /* Other styles for tablets */
-    /* ... */
-}
-
-/* Adjust layout for laptops (769px to 992px) */
-@media (min-width: 769px) and (max-width: 992px) {
-    .header {
-        font-size: 1.8rem;
-    }
-
-    .buttons {
-        grid-template-columns: repeat(3, 20vw);
-        grid-template-rows: repeat(3, 20vw);
-        gap: 15px;
-    }
-
-    .button {
-        font-size: 1.3rem;
-        /* Adjust other button styles */
-    }
-
-    /* Other styles for laptops */
-    /* ... */
-}
-
-/* Adjust layout for large screens (993px to 1200px) */
-@media (min-width: 993px) and (max-width: 1200px) {
-    .header {
-        font-size: 2rem;
-    }
-
-    .buttons {
-        grid-template-columns: repeat(3, 15vw);
-        grid-template-rows: repeat(3, 15vw);
-        gap: 20px;
-    }
-
-    .button {
-        font-size: 1.5rem;
-        /* Adjust other button styles */
-    }
-
-    
-}
-
 
