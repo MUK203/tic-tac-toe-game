@@ -141,11 +141,33 @@ function applyPopAnimation(element) {
 }
 
 function clrScore(){
+    const btns =[
+        [document.getElementById("bt1"), document.getElementById("bt2"), document.getElementById("bt3")],
+        [document.getElementById("bt4"), document.getElementById("bt5"), document.getElementById("bt6")],
+        [document.getElementById("bt7"), document.getElementById("bt8"), document.getElementById("bt9")],
+        [document.getElementById("bt1"), document.getElementById("bt4"), document.getElementById("bt7")],
+        [document.getElementById("bt2"), document.getElementById("bt5"), document.getElementById("bt8")],
+        [document.getElementById("bt3"), document.getElementById("bt6"), document.getElementById("bt9")],
+        [document.getElementById("bt1"), document.getElementById("bt5"), document.getElementById("bt9")],
+        [document.getElementById("bt3"), document.getElementById("bt5"), document.getElementById("bt7")],
+    ]
+    for (var i = 0; i < btns.length; i++) {
+        for (var j = 0; j < btns[i].length; j++) {
+            btns[i][j].textContent = "";
+            btns[i][j].removeAttribute("data-clicked"); // Enable the button
+            btns[i][j].style.backgroundColor=""
+        }
+    }
+
+    document.getElementById("win").textContent = "";
+    winner=null;
+    user="user1";
+    moves=0;
     document.getElementById("forX").value=0
     document.getElementById("forO").value=0
     applyPopAnimation(document.getElementById("forX"));
     applyPopAnimation(document.getElementById("forO"));
-
+    
     var newPlayer=new Audio("newPlayer.wav");
     newPlayer.play();
 
