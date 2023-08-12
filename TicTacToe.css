@@ -245,15 +245,24 @@ background-color: #000;
         
         display: block;
     }
+    .buttons{
+  
+        
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: 120px 120px 120px;
+        
+       }
+
+    
     .scorediv{
         border: 1px solid white;
     }
     #lX{
-        font-size: 2rem;
+        font-size: 30px;
     }
     
     #lO{
-        font-size: 2rem;
+        font-size: 30px;
     }
     .score-input{
         height: auto;
@@ -284,7 +293,8 @@ background-color: #000;
         margin-top: 20px;
         margin-right: 50px;
     }
-  }
+  
+}
 
 
 
