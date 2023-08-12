@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="TicTacToe.css">
+    
+    <script src="tic-tac.js"></script>
+</head>
+<header class="header">TIC-TAC-TOE GAME</header>
+
+
+<audio id="clickSound" preload="auto">
+    <source src="pop.wav" type="audio/wav">
+
+   
+</audio>
+
+
+    <!-- <h1 id="head">Welcome To Game</h1> -->
+    <div class="container">
+    <div class="buttons">
+        
+        <button onclick="btn_click(this)" id="bt1" class="items" data-clicked="false"></button>
+        <button onclick="btn_click(this)" id="bt2" class="items" data-clicked="false"></button>
+        <button onclick="btn_click(this)" id="bt3" class="items" data-clicked="false"></button>
+        <button onclick="btn_click(this)" id="bt4" class="items" data-clicked="false"></button>
+        <button onclick="btn_click(this)" id="bt5" class="items" data-clicked="false"></button>
+        <button onclick="btn_click(this)" id="bt6" class="items" data-clicked="false"></button>
+        <button onclick="btn_click(this)" id="bt7" class="items" data-clicked="false"></button>
+        <button onclick="btn_click(this)" id="bt8" class="items" data-clicked="false"></button>
+        <button onclick="btn_click(this)" id="bt9" class="items" data-clicked="false"></button>
+        <br>
+        
+    
+    </div>
+
+     
+    <div class="reset">
+        <div>
+        <label for="forX" id="lX" >Player X score:</label>
+        <input id="forX" value=0 class="score-input" readonly>
+        <br><br>
+        <label for="forO" id="lO">Player O score:</label>
+        <input id="forO" value="0" class="score-input" readonly>
+       </div>
+
+       <div class="pwin"><p id="win"></p></div>
+       <div class="repbtn">
+        <button onclick="replay()" id="replay">Replay</button>
+        <button onclick="clrScore()" id="clrScore">NewPlayers</button>
+        </div>
+        
+       <!-- <br>
+       <p>RESET BUTTON</p> -->
+    </div>
+    
+</div>
+
+  <audio id="win" preload="auto">
+        <source src="win.wav" type="audio/wav">
+        
+        <audio id="replay" preload="auto">
+            <source src="replay.mp3" type="audio/mp3">
+
+            <audio id="tie" preload="auto">
+                <source src="tie.m4a" type="audio/m4a">
+
+                <audio id="NewPlayers" preload="auto">
+                    <source src="newPlayer.wav" type="audio/wav">
+     
+</html>
