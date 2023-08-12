@@ -224,9 +224,8 @@ background-color: #000;
 
 
 
-/* @media (max-width: 1080px) { */
+ @media (max-width: 1080px) { 
     
-    @media (width:412px) and (height:914px) {
     .header{
         font-size: 2rem;
     }
