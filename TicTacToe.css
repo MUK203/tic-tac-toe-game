@@ -229,62 +229,63 @@ background-color: #000;
 
 /* Media query for screens up to Samsung A31's width */
 @media (max-width: 1080px) {
+    /* Add a CSS reset to remove default margins and padding */
+/* body, div, p, h1, h2, h3, ul, li, button, input {
+    margin: 0;
+    padding: 0;
+  } */
+  
     .header{
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    body{
+        width: 100%;
     }
     .container{
-        width: 412px;
-        display: flex;
+        
+        display: block;
     }
-    .buttons{
-  
-        width: 206px;
-        grid-template-columns: repeat(3, 50px);
-        grid-template-rows: 50px 50px 50px;
-        
-       }
-       .reset{
-        width: 206px;
-       }
-       #lX{
-        font-size: 22px;
-       }
-       #lO{
-        font-size: 22px;
-       }
-       .score-input{
-        width: 30px;
-        height: 30px;
-       }
-       .pwin{
-        font-size: 2rem;
-       }
-      
-       .cngbtns{
-        width: 206px;
+    .scorediv{
         border: 1px solid white;
-        margin-left: 0px;
+    }
+    #lX{
+        font-size: 2rem;
+    }
+    
+    #lO{
+        font-size: 2rem;
+    }
+    .score-input{
+        height: auto;
+    }
+    .pwin{
+        border: 1px solid white;
+        font-size: 30px;
+        height: 60px;
+        width: auto;
+    }
+    .scorediv,.pwin{
+       
+        text-align: center;
+    }
+
+    .cngbtns{
+        border: 1px solid white;
+        margin: 0px;
         justify-content: space-between;
+        width: auto;
+    }
+    .replay{
+        margin-top: 20px;
+        margin-left: 60px;
         
-       }
-       .replay{
-        margin: 0px;
-        display: flex;
-       }
-       .clrScore{
-        display: flex;
-        margin: 0px;
-        
-       }
-       #replay{
-        width: 76px;
-        font: 19px;
-       }
-       #clrScore{
-        width: 120px;
-        font: 20px;
-       }
+    }
+    .clrScore{
+        margin-top: 20px;
+        margin-right: 50px;
+    }
   }
+
 
 
 
