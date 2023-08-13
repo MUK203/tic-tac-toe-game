@@ -1,1 +1,363 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent extra scrolling */
+}
+
+#head{
+    font-size: 1rem;
+    color: #fff;
+    background-color: #008000;
+    border: 1px solid #008000;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    
+}
+.header{
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0 8px 10px blue, 0 10px 20px blue;
+    font-weight: bolder;
+}
+.items{
+    padding: 0;
+    margin: 0;
+    color: hsl(315 100% 45%);
+    font-weight: bolder;
+    font-size: 2rem;
+    /* height: 80px;
+    width: 70px; */
+    cursor: pointer;
+    text-shadow: 0px 0px 2px blue, 0 0 5px  blue, 0 0 8px  blue;
+    box-shadow: 0px 0px 2px #fff, 0 0 5px  #fff, 0 0 8px  #fff;
+background-color: #000;
+    
+}
+.items:hover{
+     background-color:aliceblue; 
+   
+}
+
+.buttons{
+  
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: 140px 140px 140px;
+    gap: 0px;
+    justify-content: center;
+    
+    background-color: #000;
+   
+    
+ 
+    
+}
+.buttons, .reset {
+   
+    padding: 10px; /* Add padding to create space between border and content */
+    flex: 1; /*Distribute available space equally between the inner divs*/
+    }
+.reset{
+    background-color: #000;
+    position: relative;
+}
+
+
+.cngbtns{
+    height: 100px;
+    width: 310px;
+    margin-left: 100px;
+    justify-content: space-between;
+    display: flex;
+}
+.clrScore
+{
+  margin-left: 47px;
+  margin-top: 50px;
+
+}
+.replay{
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+#replay{
+    /* margin-top: 145px;
+    margin-left: 40px; */
+    width: 90px;
+    height:50px;
+    background-color:cyan;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border:2px solid black;
+    box-shadow: 0 0 10px cyan,
+    0 0 30px cyan;
+}
+#replay:hover{
+    /* background-color: cyan;
+   color:aquamarine */
+   box-shadow: 0 0 5px cyan,
+   0 0 25px cyan,0 0 50px,
+   0 0 100px cyan,0 0 200px cyan;
+}
+#clrScore{
+    width: 130px;
+    height:50px;
+    border:2px solid black;
+    background-color:cyan;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px cyan,
+    0 0 30px cyan;
+}
+#clrScore:hover{
+    box-shadow: 0 0 5px cyan,
+   0 0 25px cyan,0 0 50px,
+   0 0 100px cyan,0 0 200px cyan;
+}
+
+
+
+.score-input {
+    font-size: 20px;
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    background-color: whitesmoke;
+    padding: 2px;
+    border: 3px solid  cyan;
+    box-shadow:0px 0px 2px #fff, 0 0 5px  #fff, 0 0 8px  #fff ;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Apply the transition */
+}
+
+.score-input.pop {
+    transform: scale(1.1); /* Apply a scale transformation for the pop effect */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a slight shadow for depth */
+}
+
+
+
+
+#bt1,#bt2,#bt3{
+    
+    border-top:none;
+    border-bottom: 3px solid #fff;
+     
+}
+#bt7,#bt8,#bt9{
+   
+    border-bottom:none ;
+    border-top: 3px solid #fff;
+    
+}
+
+#bt1,#bt4,#bt7{
+    
+    border-left:none;
+    border-right: 3px solid  #fff;
+
+}
+#bt3,#bt6,#bt9{
+    
+    border-right:none ;
+    border-left: 3px solid #fff;
+
+}
+
+#bt2,#bt5,#bt8{
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+
+}
+
+
+
+#bt1,#bt2,#bt3,#bt4,#bt5,#bt6,#bt7,#bt8,#bt9{
+    border-color:  hsl(315 100% 45%);
+    
+}
+
+  
+  
+#lX{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 5px red, 0 0 8px red, 0 0 12px red;
+}
+#lO{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 5px red, 0 0 8px red, 0 0 12px red;
+}
+.pwin{
+    border: 2px solid black;
+    width: 500px;
+    height: 100px;
+    justify-content: left;
+    color:fuchsia;
+    font-size: 50px;
+    font-family: 'Algerian', sans-serif;
+    text-shadow: 0 0 5px blue,0 5px 10px whitesmoke
+    
+    
+    
+
+}
+#win{
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+@media (max-width: 1080px) {
+    .header{
+        font-size: 2rem;
+    }
+    body{
+        width: 100%;
+    }
+    .container{
+        
+        display: block;
+    }
+    .buttons{
+  
+        
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: 120px 120px 120px;
+        
+       }
+
+    
+    
+    #lX{
+        font-size: 30px;
+    }
+    
+    #lO{
+        font-size: 30px;
+    }
+    .score-input{
+        height: auto;
+    }
+    .pwin{
+        
+        font-size: 30px;
+        height: 60px;
+        width: auto;
+    }
+    .scorediv,.pwin{
+       
+        text-align: center;
+    }
+
+    .cngbtns{
+        
+        margin: 0px;
+        justify-content: space-between;
+        width: auto;
+    }
+    .replay{
+        margin-top: 20px;
+        margin-left: 60px;
+        
+    }
+    .clrScore{
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+  
+}
+
+
+
+@media (width: 412px) and (height: 914px){
+
+    .header{
+        font-size: 2rem;
+    }
+    body{
+        width: 100%;
+    }
+    .container{
+        
+        display: block;
+        height: 914px;
+    }
+    .buttons{
+  
+        border: 1px solid white;
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: 80px 80px 80px;
+        height: 240px;
+       }
+
+    
+    
+    #lX{
+        font-size: 20px;
+    }
+    
+    #lO{
+        font-size: 20px;
+    }
+    .score-input{
+        height: auto;
+        font-size: 15px;
+    }
+    .pwin{
+        
+        font-size: 30px;
+        height: 60px;
+        width: auto;
+    }
+    .scorediv,.pwin{
+        border: 1px solid white;
+        text-align: center;
+    }
+
+    .cngbtns{
+        border: 1px solid white;
+        margin: 0px;
+        justify-content: space-between;
+        width: auto;
+    }
+    .replay{
+        margin-top: 20px;
+        margin-left: 60px;
+        
+    }
+    .clrScore{
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+    #replay{
+        height: 30px;
+        font-size: 15px;
+        width: 60px;
+    }
+    #clrScore{
+        height: 30px;
+        font-size: 15px;
+        width: 93px;
+    }
+}
+
+
 
