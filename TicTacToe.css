@@ -284,4 +284,77 @@ background-color: #000;
   
 }
 
+@media (width: 412px) and (height: 914px){
+
+    .header{
+        font-size: 2rem;
+    }
+    body{
+        width: 100%;
+    }
+    .container{
+        
+        display: block;
+        height: 914px;
+    }
+    .buttons{
+  
+        border: 1px solid white;
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: 80px 80px 80px;
+        height: 240px;
+       }
+
+    
+    
+    #lX{
+        font-size: 20px;
+    }
+    
+    #lO{
+        font-size: 20px;
+    }
+    .score-input{
+        height: auto;
+        font-size: 15px;
+    }
+    .pwin{
+        
+        font-size: 30px;
+        height: 60px;
+        width: auto;
+    }
+    .scorediv,.pwin{
+        border: 1px solid white;
+        text-align: center;
+    }
+
+    .cngbtns{
+        border: 1px solid white;
+        margin: 0px;
+        justify-content: space-between;
+        width: auto;
+    }
+    .replay{
+        margin-top: 20px;
+        margin-left: 60px;
+        
+    }
+    .clrScore{
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+    #replay{
+        height: 30px;
+        font-size: 15px;
+        width: 60px;
+    }
+    #clrScore{
+        height: 30px;
+        font-size: 15px;
+        width: 93px;
+    }
+}
+
 
