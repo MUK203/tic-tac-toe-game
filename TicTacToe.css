@@ -224,7 +224,7 @@ background-color: #000;
 
 
 
-@media (max-width: 1080px) {
+@media (max-width: 1080px) and (max-height:2400px) {
     .header{
         font-size: 2rem;
     }
@@ -286,78 +286,73 @@ background-color: #000;
 
 
 
-@media (width: 412px) and (height: 914px){
-
-    .header{
+/* Media query for a specific range of viewport dimensions */
+@media (max-width:412px) and (max-height:912px) {
+    /* Adjust the font size of the header */
+    .header {
         font-size: 2rem;
     }
-    body{
+
+    /* Make the body occupy the full width */
+    body {
         width: 100%;
     }
-    .container{
-        
+
+    /* Adjust styles for the container */
+    .container {
         display: block;
         height: 914px;
     }
-    .buttons{
-  
-      
-        grid-template-columns: repeat(3, 70px);
-        grid-template-rows: 80px 80px 80px;
-        height: 240px;
-       }
 
-    
-    
-    #lX{
+    /* Adjust the styles for buttons */
+    .buttons {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 80px);
+        gap: 2px; /* Adding gap between buttons */
+        height: auto; /* Allow the height to adjust based on content */
+    }
+
+    /* Adjust the font size of X and O labels */
+    #lX, #lO {
         font-size: 20px;
     }
-    
-    #lO{
-        font-size: 20px;
-    }
-    .score-input{
+
+    /* Adjust the styles of score input */
+    .score-input {
         height: auto;
         font-size: 15px;
     }
-    .pwin{
-        
+
+    /* Adjust the styles of winning message */
+    .pwin {
         font-size: 30px;
         height: 60px;
         width: auto;
     }
-    .scorediv,.pwin{
-       
+
+    /* Add border and center alignment to score and winning message */
+    .scorediv, .pwin {
+        
         text-align: center;
     }
 
-    .cngbtns{
+    /* Adjust styles for button container */
+    .cngbtns {
         
-        margin: 0px;
+        margin: 0;
+        display: flex; /* Display as flex container */
         justify-content: space-between;
-        width: auto;
-    }
-    .replay{
-        margin-top: 20px;
-        margin-left: 60px;
-        
-    }
-    .clrScore{
-        margin-top: 20px;
-        margin-right: 50px;
     }
 
-    #replay{
-        height: 30px;
-        font-size: 15px;
-        width: 60px;
+    /* Adjust styles for replay and clear score buttons */
+    .replay, .clrScore {
+        margin-top: 20px;
     }
-    #clrScore{
+
+    #replay, #clrScore {
         height: 30px;
         font-size: 15px;
-        width: 93px;
     }
 }
-
-
-
