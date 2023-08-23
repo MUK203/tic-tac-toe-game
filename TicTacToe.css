@@ -287,7 +287,7 @@ background-color: #000;
 
 
 /* Media query for a specific range of viewport dimensions */
-@media (max-width:412px) and (max-height:912px) {
+@media (max-width:412px) and (max-height:915px) {
     /* Adjust the font size of the header */
     .header {
         font-size: 2rem;
